@@ -50,12 +50,6 @@
     box-sizing: border-box;
   }
   
-  body {
-    font-family: sans-serif;
-    margin: 20px;
-    padding: 0;
-  }
-  
   .square {
     background: #fff;
     border: 1px solid #999;
@@ -70,6 +64,10 @@
     text-align: center;
     width: 34px;
   }
+
+  .highlight {
+    background: yellow;
+  }
   
   .board-row:after {
     clear: both;
@@ -80,14 +78,25 @@
   .status {
     margin-bottom: 10px;
   }
+  
   .game {
     display: flex;
     flex-direction: row;
+  }
+
+  .game-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
   .game-info {
     display: flex;
     flex-direction: column;
     margin-left: 20px;
+  }
+
+  .history-button {
+    margin-top: 10px;
   }
   
